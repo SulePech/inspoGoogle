@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: hsl(223, 41%, 97%);
+    font-size: 13px;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px;
+    padding-top: 10px;
+}
+
+header nav .nav{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav .nav a{
+    margin-right: 15px;
+    color: #000000;
+}
+
+header nav .nav a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+header nav .nav-link{
+    padding: 5px 5px;
+}
+
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.main-logo {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.main-input {
+    border: 1px solid #5f6368;
+    width: 600px;
+    height: 45px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main-input:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: transparent;
+    background-color:hsl(223, 41%, 97%);
+}
+
+.main-input input {
+    flex-grow: 1;
+    height: 30px;
+    margin-right: 0;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+
+    
+}
+
+.main-input input:focus {
+    outline: none;
+}
+
+#camara-icono img {
+   
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: contain;
+    width: 5px;
+    height: 5px;
+}
+
+.main-button {
+    margin-top: 20px;
+   
+    
+}
+
+.main-button button {
+    height: 36px;
+    background-color: hsl(223, 41%, 97%) ;
+    border: 1px solid #303134;
+    color: hsl(0, 0%, 3%);
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 0 12px;
+    margin: 12px 4px;
+    
+
+}
+
+.main-button button:hover {
+    border: 1px solid lightgray;
+
+}
+
+
+footer {
+    background-color: hsl(223, 41%, 97%);
+    height: 100px;
+}
+
+.content-footer {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.top-footer {
+    height: 50%;
+    border-bottom: 1px solid #000000;
+    
+    
+}
+
+.top-footer p {
+    color: #000000;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.bottom-footer {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+.bottom-footer ul li a {
+    font-size: 14px;
+    color: #000000;
+}
+
+.bottom-footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.left {
+    display: flex;
+}
+
+.left li {
+    margin-right: 15px;
+}
+
+
+.right {
+    display: flex;
+}
+
+.right li {
+    margin-left: 15px;
+}
+
+
+
+@media only screen and (max-width: 650px){
+   
+    
+    .main-logo {
+        width: 200px;
+    }
+
+    
+    .main-input {
+        width: 90%;
+        height: 35px;
+    }
+
+    .search-bar i {
+        font-size: 14px;
+    }
+
+    
+    .main-button button {
+        height: 50px;
+        font-size: 10px;
+    }
+
+    
+
+    footer {
+        height: 150px;
+    }
+
+    .top-footer {
+        height: 50px;
+    }
+
+    .bottom-footer {
+        height: 100px;
+        flex-direction: column;
+    }
+
+    .left {
+        flex-wrap: wrap;
+    }
+
+}
